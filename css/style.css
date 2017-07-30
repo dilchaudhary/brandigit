@@ -1,161 +1,93 @@
 body{
 	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 200vh;
 	text-transform: capitalize;
-	font-family: Quicksand;
+	font-family: sans-serif;
+	height: 200vh;
+
 }
 header{
 	margin: 0;
 	padding: 0;
-	width: 100%;
 	height: 60px;
-	border-bottom: 1px solid #111;
-	background-color: #111;
-	position: fixed;
-	z-index: 1;
+    border-bottom: 1px solid #111;
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 .wrapper{
 	width: 1170px;
 	margin: auto;
 	height: 100%;
 }
-div.top-header::after{
+div.header-top{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+}
+div.header-top::after{
 	clear: both;
 	content: '';
 	display: table;
 }
-div.top-header div{
+div.header-top div{
 	float: left;
 	line-height: 60px;
 	color: #ddd;
 }
 div.logo{
-    width: 19%;
-    text-align:left;
-    height: 40px;
-    margin: 10px 0px;
-    border-right: 1px solid #ddd;
+	width: 20%;
+	text-align: center;
+	height: 40px;
+	margin: 10px 0px;
+	border-right: 1px solid #ddd;
 }
 div.online{
-	width: 20%;
-	text-align:center;
-  font-family: Quicksand;
+	width: 69%;
+	padding-left: 10px;
 }
-div.top-menu{
-	width: 60%;
-	text-align:right;
+div.menu{
+	width: 10%;
+	text-align: right;
 	font-size: 20px;
+}
+div.menu:hover div.mega-menu{
+  display: block;
+}
+div.mega-menu{
+	width: 100%;
+	height:500px;
+	background-color: #8b4;
+	left: 0;
+	position: fixed;
+	text-align:left;
+	display: none;
 }
 div.mega-menu::after{
 	clear: both;
 	content: '';
 	display: table;
 }
-div.mega-menu{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	width:702px;
-    height:auto;
-	float: left;
-	text-align:right;
-	position: fixed;
-	display: none;
+div.mega-menu div{
+	width: 33.33%;
+	text-align: center;
+	font-size: 30px;
 }
 div.mega-menu ul li{
-	list-style: none;
+	font-size: 20px;
+    list-style: none;
+    width: 100%;
 }
 div.mega-menu ul li a{
 	text-decoration: none;
-	background-color: #046;
-	color:#fff;
+	color: #ddd;
 }
 div.mega-menu ul li a:hover{
-	color: #8b4;
-	 cursor: pointer;
+	color: #17d;
 }
-div.top-menu:hover div.mega-menu{
-	display: block;
+
    
-}
-/*/*menu starts*/  
-/*section.main-menu{
-	margin: 0;
-	padding-top: 100px;
-	width: 100%;
-	height: 400px;
-	background-color: #8b4;
-}
-div.menu{
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 400px;
-}
-div.menu::after{
-	clear: both;
-	content: '';
-	display: table;
-}
-div.menu div{
-	width: 33.33%;
-	float: left;
-	text-align: center;
-}
-div.menu li {
-	list-style: none;
-}
-div.menu li a{
-	text-decoration: none;
-	font-size: 30px;
-	color: #ddd;
-	font-family: sans-serif;
-}
-div.menu li a:hover{
-	color: #24c;
-}
-div.menu img{
-     transform: scale(0.7);
-}
-section.menu-img{
-	margin: 0;
-	padding-top:40px;
-	width: 100%;
-	height: 300px;
-	background-color: #111;
-	color: #ddd;
-	text-align: center;
-	font-size: 20px;
-	position: fixed;
-}
-div.in-menu{
-	margin: 0;
-	padding-top:40px;
-	width: 100%;
-	height: auto;
-	
-}
-div.in-menu::after{
-	clear: both;
-	content: '';
-	display: table;
-}
-div.in-menu div{
-	width: 16.16666667%;
-	float: left;
-	text-align: center;
-}
-div.in-menu img{
-	filter: grayscale(100%);
-	transform: scale(0.7);
-}
-div.in-menu img:hover{
-	filter: grayscale(0%);
-	cursor: pointer;
-}*/
-/*menu ends*/
 /*section information starts*/
  section.information{
  	margin:0;
@@ -169,12 +101,12 @@ div.in-menu img:hover{
  	text-align: center;
  	font-size: 40px;
  	color: #fff;
- 	font-family: roboto;
+/* 	font-family: roboto;*/
  }
  p.section-content{
  	text-align: center;
  	font-size: 20px;
- 	font-family: roboto;
+/* 	font-family: roboto;*/
  	color: #fff;
  }
  div.see-btn{
@@ -230,7 +162,7 @@ section.business{
 	width: 100%;
 	height:450px;
 	background-color: #8b4;	
-	font-family: roboto;
+	/*font-family: roboto;*/
 }
 div.applications::after{
 	clear: both;
@@ -270,7 +202,7 @@ section.experience{
 	padding-top:40px;
 	width: 100%;
 	height: auto;
-	font-family: roboto;
+/*	font-family: roboto;*/
 }
 section.experience div{
 	color: #fa4;
@@ -649,7 +581,7 @@ section.value{
 	width: 100%;
 	height: 400px;
 	background-color: #8b4;
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
 }
 div.row::after{
 	clear: both;
@@ -696,7 +628,7 @@ section.contact{
 	margin: 0;
 	padding-top: 150px;
 	width: 100%;
-	height:300px;
+	height:240px;
 	background-image: url(../img/bg5.jpg);
 }
 section.feedback{
@@ -761,7 +693,7 @@ section.b-application{
 	background-image: url(../img/bg6.jpg);
 	background-repeat: no-repeat;
 	background-size:cover;
-	font-family: sans-serif;
+/*	font-family: sans-serif;*/
 }
 
 section.introduction{
@@ -854,7 +786,7 @@ section.mobile-app{
 	background-image: url(../img/bg7.jpg);
 	background-repeat: no-repeat;
 	background-size:cover;
-	font-family: sans-serif;
+/*	font-family: sans-serif;*/
 }
 /*mobile apps starts*/
 
@@ -868,7 +800,7 @@ section.digital{
 	background-image: url(../img/bg8.jpg);
 	background-repeat: no-repeat;
 	background-size:cover;
-	font-family: sans-serif;
+/*	font-family: sans-serif;*/
 }
 /*digital section ends*/
 
@@ -879,7 +811,7 @@ section.product{
 	width: 100%;
 	height:500px;
 	background-image: url(../img/bg9.jpg);
-	font-family: Quicksand;
+/*	font-family: Quicksand;*/
 }
 div.indust{
 	margin: 0;
