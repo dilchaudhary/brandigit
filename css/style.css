@@ -644,9 +644,19 @@ div.head{
 div.head i{
 	font-size: 20px;
 }
+div.in-put::after{
+	clear: both;
+	content: '';
+	display: table;
+}
 div.in-put{
 	width: 50%;
 	float: left;
+}
+div.area::after{
+	clear: both;
+	content: '';
+	display: table;
 }
 div.area{
 	width: 50%;
@@ -668,7 +678,7 @@ select{
 	font-size: 20px;
 }
 textarea{
-	text-align: center;
+	text-align:left;
 	font-size: 20px;
 }
 div.submit{
